@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h1 {
+    color: #2c3e50;
+    text-align: center;
+}
+h2 {
+    color: #2980b9;
+    border-bottom: 2px solid #2980b9;
+    padding-bottom: 5px;
+}
+.section {
+    margin-bottom: 20px;
+}
+.contact-info, .skills, .experience, .education {
+    line-height: 1.6;
+}
+.job, .edu {
+    margin-bottom: 15px;
+}
+.job-title, .edu-title {
+    font-weight: bold;
+    color: #34495e;
+}
+.date {
+    font-style: italic;
+    color: #7f8c8d;
+}
+a {
+    color: #2980b9;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
