@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna Wardrobe</title>
+    <link rel="stylesheet" href="text.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo-title">
+              <img src="img/Logo.jpg" alt="Logo" class="logo">
+              <span class="title">Luna Wardrobe</span>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links" id="navLinks">
+              <li><a href="index.html">Trang Chủ</a></li>
+              <li><a href="Sanpham.html">Sản Phẩm</a></li>
+              <li><a href="Giohang.html">Giỏ Hàng</a></li>
+              <li><a href="Login.html">Đăng Nhập</a></li>
+              <li><a href="Gioithieu.html">Giới Thiệu</a></li>
+              <li><a href="Lienhe.html">Liên Hệ</a></li>
+            </ul>
+          </div>
+          
+    </header>
+    <h2 class="hss">Mẫu Chân Váy</h2>
+    <main>
+        <section id="products">
+            <!-- 1-->
+                <div class="product">
+                    <img src="img/chan-vay-but-chi.jpg" alt=" Chân váy bút chì">
+                    <h3>Chân váy bút chì</h3>
+                    <p>Giá tiền: 500.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Áo croptop cổ vuông',
+                        price: '500000',
+                        desc: 'Chân váy bút chì dáng dài, eo chun co giãn thoải mái, dễ dàng điều chỉnh theo vòng eo. Thiết kế đơn giản, kín đáo nhưng vẫn tôn lên vẻ nữ tính và duyên dáng',
+                        img: 'img/chan-vay-but-chi.jpg',
+                        material: 'Vải Cotton mềm mại, thoáng mát',
+                        color: 'Kem',
+                        style: 'Dáng dài suông thanh lịch và kín đáo.'
+                    })">Xem chi tiết</a>    
+                </div>
+                
+            <!--2-->
+                <div class="product">
+                    <img src="img/chan-vay-JK.jpg" alt=" Chân váy JK">
+                    <h3>Chân váy JK</h3>
+                    <p>Giá tiền: 180.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Chân váy JK',
+                        price: '180000',
+                        desc: ' Chân váy ngắn chữ A xòe nhẹ, eo cao tôn dáng. Điểm nhấn độc đáo là chi tiết cột dây đan chéo ở hai bên eo, vừa tạo vẻ ngoài cá tính vừa có thể điều chỉnh độ ôm. Thiết kế trẻ trung và năng động',
+                        img: 'img/chan-vay-JK.jpg',
+                        material: 'Kaki dày dặn, giữ form tốt',
+                        color: 'Họa tiết kẻ caro',
+                        style: 'Năng động, cá tính'
+                    })">Xem chi tiết</a>    
+                </div>
+                
+            <!--3-->
+                <div class="product">
+                    <img src="img/chan-vay-chu-a.jpg" alt="Chân váy chữ A ">
+                    <h3>Chân váy chữ A </h3>
+                    <p>Giá tiền: 180.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Chân váy chữ A',
+                        price: '180000',
+                        desc: 'Chân váy ngắn chữ A, eo vừa tôn dáng. Điểm nhấn ấn tượng là họa tiết loang màu độc đáo trên nền vải. Cài khuy bên hông với hai nút cài cách điệu hình hoa, mang đến vẻ ngoài vừa hiện đại vừa có chút nét Á Đông tinh tế. Váy có xẻ tà nhỏ ở vạt trước tạo sự thoải mái khi di chuyển.',
+                        img: 'img/chan-vay-chu-a.jpg',
+                        material: 'Cotton mềm mại, thoáng mát',
+                        color: 'Họa tiết loang màu be và nâu nhạt',
+                        style: 'Trẻ trung, tôn dáng.'
+                    })">Xem chi tiết</a>    
+                </div>
+                
+            <!--4-->
+                <div class="product">
+                    <img src="img/cha-vay-ren.jpg" alt="Chân váy ren">
+                    <h3>Chân váy ren </h3>
+                    <p>Giá tiền: 300.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Chân váy ren',
+                        price: '300000',
+                        desc: 'Chân váy chữ A dáng xòe nhẹ, eo chun co giãn thoải mái. Thiết kế nhiều tầng ren xếp lớp mềm mại, tạo độ bồng bềnh và vẻ ngoài lãng mạn, duyên dáng.',
+                        img: 'img/cha-vay-ren.jpg',
+                        material: 'Ren mềm mại, thoáng mát.',
+                        color: 'Trắng ',
+                        style: 'Dáng chữ A xòe nhẹ, nhiều tầng ren bồng bềnh.y'
+                    })">Xem chi tiết</a>    
+                </div>
+                
+            <!--5-->
+                <div class="product">
+                    <img src="img/chan-vay-cong-so.jpg" alt="Chân váy công sở">
+                    <h3>Chân váy công sở</h3>
+                    <p>Giá tiền: 180.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Chân váy công sở',
+                        price: '180000',
+                        desc: 'Váy ngắn chữ A với vạt chéo phía trước tạo hiệu ứng xếp lớp duyên dáng. Eo cao, có chi tiết nơ buộc lệch một bên, vừa tạo điểm nhấn vừa tôn vòng eo. Thiết kế trẻ trung và thanh lịch.',
+                        img: 'img/chan-vay-cong-so.jpg',
+                        material: 'Tuytsi mềm mại, thoáng mát',
+                        color: 'Tím nhạt',
+                        style: ' Dáng chữ A trẻ trung, tôn dáng.'
+                    })">Xem chi tiết</a>    
+                </div>
+                
+            <!--6-->
+                <div class="product">
+                    <img src="img/chan-vay-lua.jpg" alt="Chân váy lụa">
+                    <h3>Chân váy lụa</h3>
+                    <p>Giá tiền: 260.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Chân váy lụa',
+                        price: '260000',
+                        desc: ' Chân váy dáng dài chữ A, eo cao tôn dáng. Chất liệu lụa satin mềm mại rủ nhẹ theo từng chuyển động, mang đến vẻ ngoài thanh lịch, duyên dáng và vô cùng nữ tính. Thiết kế đơn giản, không họa tiết cầu kỳ, tập trung vào vẻ đẹp của chất liệu và đường cắt',
+                        img: 'img/chan-vay-lua.jpg',
+                        material: 'Lụa satin cao cấp, mềm mại và có độ bóng nhẹ',
+                        color: 'Nâu',
+                        style: 'Dáng chữ A mềm mại, tôn dáng.'
+                    })">Xem chi tiết</a>    
+                </div>
+                
+            <!--7-->
+                <div class="product">
+                    <img src="img/chan-vay-xep-ly.jpg" alt="Chân váy xếp ly">
+                    <h3>Chân váy xếp ly</h3>
+                    <p>Giá tiền: 260.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Chân váy xếp ly',
+                        price: '260000',
+                        desc: 'Chân váy ngắn xếp ly đều, eo cao tôn dáng. Điểm nhấn là chiếc thắt lưng da màu đen đi kèm với khóa kim loại đơn giản nhưng cá tính, giúp bạn tạo điểm nhấn cho vòng eo. Thiết kế trẻ trung và năng động.',
+                        img: 'img/chan-vay-xep-ly.jpg',
+                        material: 'Kaki dày dặn, giữ form',
+                        color: 'Xám',
+                        style: 'Trẻ trung, năng động'
+                    })">Xem chi tiết</a>    
+                </div>
+                
+            <!--8-->
+                <div class="product">
+                    <img src="img/chan-vay-duoi-ca.jpg" alt="Chân váy đuôi cá">
+                    <h3>Chân váy đuôi cá</h3>
+                    <p>Giá tiền: 480.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Chân váy đuôi cá',
+                        price: '480000',
+                        desc: 'Chân váy ôm sát phần hông, xòe rộng ở phần dưới theo dáng đuôi cá, tạo đường cong mềm mại và thu hút. Eo cao tôn dáng. Điểm nhấn là đường xẻ tà táo bạo ở một bên, vừa gợi cảm vừa giúp di chuyển thoải mái. Chi tiết kim loại nhỏ ở eo tạo thêm vẻ hiện đại.',
+                        img: 'img/chan-vay-duoi-ca.jpg',
+                        material: 'Polyester co giãn',
+                        color: 'Đen',
+                        style: 'Tôn đường cong, gợi cảm'
+                    })">Xem chi tiết</a>    
+                </div>
+                
+            <!--9-->
+                <div class="product">
+                    <img src="img/chan-vay-jean.jpg" alt="Chân váy jean">
+                    <h3>Chân váy jean</h3>
+                    <p>Giá tiền: 240.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Chân váy jean',
+                        price: '240000',
+                        desc: 'Chân váy jean ngắn xếp ly đều, eo cao tôn dáng. Điểm nhấn là chiếc thắt lưng da màu nâu đi kèm với khóa kim loại cổ điển, vừa tạo điểm nhấn cho vòng eo vừa tăng thêm vẻ cá tính. Thiết kế trẻ trung và năng động.',
+                        img: 'img/chan-vay-jean.jpg',
+                        material: 'Vải bò bền bỉ và phong cách.',
+                        color: 'Xanh denim wash bụi bặm và cá tính',
+                        style: 'xếp ly trẻ trung và năng động.'
+                    })">Xem chi tiết</a>    
+                </div>
+                
+            <!--10-->
+                <div class="product">
+                    <img src="img/chan-vay-da.jpg" alt="Chân váy da">
+                    <h3>Chân váy da</h3>
+                    <p>Giá tiền: 280.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Chân váy da',
+                        price: '280000',
+                        desc: 'Chân váy ngắn chữ A, eo vừa tôn dáng. Điểm nhấn là thiết kế vạt chéo bất đối xứng ở phía trước, tạo vẻ ngoài cá tính và hiện đại. Đường may tỉ mỉ và sắc sảo.',
+                        img: 'img/chan-vay-da.jpg',
+                        material: 'Da PU mềm mại và thời thượng',
+                        color: 'Đỏ rựu',
+                        style: 'Trẻ trung, tôn dáng.'
+                    })">Xem chi tiết</a>    
+                </div>
+                
+        </section>
+    </main>
+    <footer>
+        <p>Luna Wardrobe &copy; 2025. All rughts reserved.</p>
+    </footer>
+</body>
+
+<script>
+    function saveProductDetail(product) {
+      localStorage.setItem('selectedProduct', JSON.stringify(product));
+    }
+  </script>
+  
+<!-- Khung modal hiển thị ảnh -->
+<div id="imageModal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modalImg" src="" alt="zoom ảnh">
+  </div>
+  <script>
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImg");
+  
+    // Gắn sự kiện click vào tất cả ảnh trong sản phẩm
+    document.querySelectorAll("#products .product img").forEach(img => {
+      img.addEventListener("click", () => {
+        modal.style.display = "block";
+        modalImg.src = img.src;
+      });
+    });
+  
+    // Hàm để đóng modal
+    function closeModal() {
+      modal.style.display = "none";
+    }
+  
+    // Đóng modal khi bấm ngoài ảnh
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        closeModal();
+      }
+    }
+  </script>
+</html>

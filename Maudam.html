@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna Wardrobe</title>
+    <link rel="stylesheet" href="text.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo-title">
+              <img src="img/Logo.jpg" alt="Logo" class="logo">
+              <span class="title">Luna Wardrobe</span>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links" id="navLinks">
+              <li><a href="index.html">Trang Chủ</a></li>
+              <li><a href="Sanpham.html">Sản Phẩm</a></li>
+              <li><a href="Giohang.html">Giỏ Hàng</a></li>
+              <li><a href="Login.html">Đăng Nhập</a></li>
+              <li><a href="Gioithieu.html">Giới Thiệu</a></li>
+              <li><a href="Lienhe.html">Liên Hệ</a></li>
+            </ul>
+          </div>
+          
+    </header>
+    <h2 class="hss">Mẫu Đầm</h2>
+    <main>
+        <section id="products">
+                <div class="product">
+                    <img src="img/vay-yem-hong-nhat.jpg" alt=" Váy yếm">
+                    <h3>Váy yếm</h3>
+                    <p>Giá tiền: 220.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Váy yếm',
+                        price: '220000',
+                        desc: 'Váy yếm dáng midi xòe nhẹ, phần thân trên ôm vừa vặn, có dây buộc nơ ở cổ tạo điểm nhấn duyên dáng. Eo cao giúp tôn vòng eo và kéo dài đôi chân. Váy có túi hai bên tiện lợi. Thiết kế đơn giản nhưng vẫn toát lên vẻ thanh lịch và nữ tính.',
+                        img: 'img/vay-yem-hong-nhat.jpg',
+                        material: 'Cotton mềm mại thoáng mát',
+                        color: 'Hồng nhạt',
+                        style: 'Ngọt ngào, nữ tính'
+                    })">Xem chi tiết</a>    
+                </div>
+                
+                <div class="product">
+                    <img src="img/dam-dai-tay-beo.jpg" alt=" Đầm dài tay bèo">
+                    <h3>Đầm dài tay bèo</h3>
+                    <p>Giá tiền: 150.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Đầm dài tay bèo',
+                        price: '150000',
+                        desc: 'Dáng xòe nhẹ, cổ vuông thanh lịch, tay dài phồng nhẹ ở vai và có chi tiết bèo nhún ở cổ tay. Phần thân áo ôm nhẹ, có chi tiết nhún dọc tạo điểm nhấn. Chân váy xòe mềm mại với đường bèo nhún bất đối xứng, mang đến vẻ ngoài bay bổng và nữ tính.',
+                        img: 'img/dam-dai-tay-beo.jpg',
+                        material: 'Voan mềm mại, thoáng mát',
+                        color: 'Trắng kem',
+                        style: 'Thanh lịch, duyên dáng, nữ tính'
+                    })">Xem chi tiết</a>    
+                </div>
+                
+                <div class="product">
+                    <img src="img/vay-lien-than.jpg" alt="Vay liền thân">
+                    <h3>Váy liền thân</h3>
+                    <p>Giá tiền: 400.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Váy liền thân',
+                        price: '400000',
+                        desc: 'Váy liền thân dáng chữ A xòe nhẹ, phần thân trên ôm vừa vặn với thiết kế cổ chữ V tôn dáng. Tay dài phồng nhẹ ở vai tạo điểm nhấn nữ tính. Sự kết hợp màu sắc đen ở phần thân váy và trắng ở phần tay áo tạo nên vẻ ngoài thanh lịch và tinh tế. Chi tiết đường viền trắng ngang eo giúp phân chia tỷ lệ cơ thể cân đối.',
+                        img: 'img/vay-lien-than.jpg',
+                        material: 'Tuytsi mềm mại, thoải mái',
+                        color: 'Trắng đen',
+                        style: 'Cổ chữ V gợi cảm'
+                    })">Xem chi tiết</a>    
+                </div>
+                
+                <div class="product">
+                    <img src="img/dam-co-yem.jpg" alt="Đầm cổ yếm">
+                    <h3>Đầm cổ yếm</h3>
+                    <p>Giá tiền: 250.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Đầm cổ yếm',
+                        price: '250000',
+                        desc: 'Đầm cổ yếm dáng dài xòe bồng bềnh, phần thân trên ôm sát với thiết kế cổ yếm quyến rũ, khoe trọn bờ vai thon thả. Eo cao chiết ly tỉ mỉ giúp tôn vòng eo và kéo dài đôi chân. Chân váy xòe rộng với nhiều lớp vải mềm mại, tạo độ bồng bềnh và uyển chuyển trong từng bước đi.',
+                        img: 'img/dam-co-yem.jpg',
+                        material: 'Lụa cao cấp',
+                        color: 'Hồng nhạt',
+                        style: 'Cổ yếm ngọt nào, thanh lịch, gợi cảm'
+                    })">Xem chi tiết</a>    
+                </div>
+                
+                <div class="product">
+                    <img src="img/set-ao-crop-top-va-chan-vay-lua.jpg" alt="Set áo croptop và chân vá lụa">
+                    <h3>Sét áo croptop và chân váy lụa</h3>
+                    <p>Giá tiền: 180.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Set áo croptop và chân váy lụa',
+                        price: '180000',
+                        desc: 'Dáng ngắn hở eo, cổ tròn hoặc chữ V xẻ nhẹ, có dây rút ở giữa ngực tạo điểm nhấn. Thiết kế tay sát nách hoặc tay cánh tiên rộng rãi, mang đến sự thoải mái tối đa. Chân váy maxi: Dáng dài thướt tha, eo rút dây có thể điều chỉnh, tạo sự thoải mái và tôn vòng eo. Chân váy xòe rộng với chi tiết ren hoặc tua rua ở gấu, tăng thêm vẻ bohemian lãng mạn.',
+                        img: 'img/set-ao-crop-top-va-chan-vay-lua.jpg',
+                        material: 'Lụa cao cấp',
+                        color: 'Kem',
+                        style: 'Gợi cảm, nữ tính'
+                    })">Xem chi tiết</a>    
+                </div>
+                
+                <div class="product">
+                    <img src="img/dam-ngan-co-vuong.jpg" alt="Đầm ngắn cổ vuông">
+                    <h3>Đầm ngắn cổ vuông</h3>
+                    <p>Giá tiền: 120.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Đầm ngắn cổ vuông',
+                        price: '120000',
+                        desc: 'Váy ngắn dáng chữ A xòe nhẹ, cổ vuông nữ tính với chi tiết cột dây nơ đen tạo điểm nhấn ngọt ngào. Tay ngắn ôm nhẹ. Chất liệu dệt kim có họa tiết vân thừng dọc thân áo, mang đến vẻ ngoài ấm áp và thanh lịch.g',
+                        img: 'img/dam-ngan-co-vuong.jpg',
+                        material: 'Mềm mại, co giãn',
+                        color: 'Be',
+                        style: 'Trẻ trung, duyên dáng'
+                    })">Xem chi tiết</a>    
+                </div>
+                
+                <div class="product">
+                    <img src="img/dam-tre-vai.jpg" alt="Đầm trễ vai">
+                    <h3>Đầm trễ vai</h3>
+                    <p>Giá tiền: 150.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Đầm trễ vai',
+                        price: '150000',
+                        desc: 'Dáng dài thướt tha, thiết kế trễ vai gợi cảm khoe trọn bờ vai thon thả. Phần thân trên ôm nhẹ, có chi tiết xếp ly dọc tạo điểm nhấn. Eo cao được nhấn nhá bằng chiếc thắt lưng mảnh màu đen đi kèm, giúp tôn vòng eo và tạo sự cân đối cho vóc dáng. Chân váy xòe rộng với nhiều lớp vải mềm mại, tạo độ bay bổng và uyển chuyển trong từng bước đi.',
+                        img: 'img/dam-tre-vai.jpg',
+                        material: 'Chiffon mềm mại, thoáng mát',
+                        color: 'Trắng',
+                        style: 'Thanh lịch, quyến rũ'
+                    })">Xem chi tiết</a>    
+                </div>
+                
+                <div class="product">
+                    <img src="img/Vay-hoodie-ngan-that-eo.jpg" alt="Váy hoodie ngắn thắt eo">
+                    <h3>Váy hoodie ngắn thắt eo</h3>
+                    <p>Giá tiền: 210.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Váy hoodie ngắn thắt eo',
+                        price: '210000',
+                        desc: 'Váy hoodie dáng ngắn trên gối, có mũ trùm đầu tiện lợi với dây rút điều chỉnh. Tay dài phồng ở vai và thu hẹp ở cổ tay tạo điểm nhấn thời trang. Phần thân váy suông nhẹ, thoải mái vận động. Thiết kế đơn giản nhưng vẫn mang đến vẻ ngoài năng động và cá tính.',
+                        img: 'img/Vay-hoodie-ngan-that-eo.jpg',
+                        material: 'Nỉ',
+                        color: 'Đen',
+                        style: 'Cá tính, thoải mái'
+                    })">Xem chi tiết</a>    
+                </div>
+                
+                <div class="product">
+                    <img src="img/vay-quay-den.jpg" alt="Váy quây">
+                    <h3>Váy cúp ngực kiểu pháp</h3>
+                    <p>Giá tiền: 210.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Váy quây',
+                        price: '210000',
+                        desc: 'Váy quây dáng ngắn trên gối, phần thân trên ôm sát tôn vòng một. Điểm nhấn là thiết kế xếp tầng bất đối xứng ở chân váy, tạo độ bồng bềnh và vẻ ngoài gợi cảm, thu hút. Chi tiết trang trí nhỏ lấp lánh ở ngực áo tăng thêm vẻ sang trọng.',
+                        img: 'img/vay-quay-den.jpg',
+                        material: 'Polyester',
+                        color: 'Đen',
+                        style: 'Quyến rũ'
+                    })">Xem chi tiết</a>    
+                </div>
+                
+                <div class="product">
+                    <img src="img/vay-hai-day-hoa-tiet-hoa-nhi.jpg" alt="Váy hai dây họa tiết hoa nhí">
+                    <h3>Váy hai dây họa tiết hoa nhí</h3>
+                    <p>Giá tiền: 800.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Váy hai dây họa tiết hoa nhí',
+                        price: '800000',
+                        desc: 'Dáng xòe nhẹ, hai dây mảnh điều chỉnh được. Phần ngực áo có chi tiết nhún nhẹ và viền bèo nữ tính. Eo cao giúp tôn vòng eo. Chân váy xòe mềm mại với các tầng bèo nhún bất đối xứng, tạo độ bay bổng và duyên dáng trong từng bước đi.',
+                        img: 'img/vay-hai-day-hoa-tiet-hoa-nhi.jpg',
+                        material: 'Voan',
+                        color: 'Nền hồng pastel dịu nhẹ với họa tiết hoa nhí nhỏ xinhm',
+                        style: 'Cổ vuông, ngắn tay'
+                    })">Xem chi tiết</a>    
+                </div>
+                
+        </section>
+    </main>
+    <footer>
+        <p>Luna Wardrobe &copy; 2025. All rughts reserved.</p>
+    </footer>
+</body>
+
+<script>
+    function saveProductDetail(product) {
+      localStorage.setItem('selectedProduct', JSON.stringify(product));
+    }
+  </script>
+  
+<!-- Khung modal hiển thị ảnh -->
+<div id="imageModal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modalImg" src="" alt="zoom ảnh">
+  </div>
+  <script>
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImg");
+  
+    // Gắn sự kiện click vào tất cả ảnh trong sản phẩm
+    document.querySelectorAll("#products .product img").forEach(img => {
+      img.addEventListener("click", () => {
+        modal.style.display = "block";
+        modalImg.src = img.src;
+      });
+    });
+  
+    // Hàm để đóng modal
+    function closeModal() {
+      modal.style.display = "none";
+    }
+  
+    // Đóng modal khi bấm ngoài ảnh
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        closeModal();
+      }
+    }
+  </script>
+
+</html>

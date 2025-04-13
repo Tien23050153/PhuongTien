@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giỏ hàng</title>
+  <link rel="stylesheet" href="text.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+        <div class="logo-title">
+          <img src="img/Logo.jpg" alt="Logo" class="logo">
+          <span class="title">Luna Wardrobe</span>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Trang Chủ</a></li>
+          <li><a href="Sanpham.html">Sản Phẩm</a></li>
+          <li><a href="Giohang.html">Giỏ Hàng</a></li>
+          <li><a href="Login.html">Đăng Nhập</a></li>
+          <li><a href="Gioithieu.html">Giới Thiệu</a></li>
+          <li><a href="Lienhe.html">Liên Hệ</a></li>
+        </ul>
+      </div>
+      
+  </header>
+
+  <main>
+    <section class="cart">
+      <h2>Danh sách sản phẩm trong giỏ hàng</h2>
+      <table id="cart-items">
+        <thead>
+          <tr>
+            <th>Hình ảnh</th>
+            <th>Tên sản phẩm</th>
+            <th>Giá</th>
+            <th>Size</th>
+            <th>Hành động</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- sản phẩm sẽ được thêm bằng JavaScript -->
+        </tbody>
+      </table>
+      <div class="total">
+        Tổng tiền: <span id="total-price">0</span> VND
+      </div>
+    </section>   
+     <footer>
+        <p>Luna Wardrobe &copy; 2025. All rughts reserved.</p>
+    </footer>
+  </main>
+
+  <script>
+
+    
+const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+const cartTable = document.querySelector("#cart-items tbody");
+const totalPriceSpan = document.getElementById("total-price");
+
+function renderCart() {
+  cartTable.innerHTML = "";
+  let total = 0;
+  cartItems.forEach((item, index) => {
+    total += Number(item.price);
+    const row = `
+      <tr>
+        <td><img src="${item.img}" width="60"></td>
+        <td>${item.name}</td>
+        <td>${item.price} VND</td>
+        <td>${item.size || "Không chọn"}</td>
+        <td><button onclick="removeItem(${index})">Xoá</button></td>
+      </tr>`;
+    cartTable.innerHTML += row;
+  });
+  totalPriceSpan.textContent = total.toLocaleString();
+}
+
+function removeItem(index) {
+  cartItems.splice(index, 1);
+  localStorage.setItem("cart", JSON.stringify(cartItems));
+  renderCart();
+}
+
+renderCart();
+
+  </script>
+</body>
+</html>

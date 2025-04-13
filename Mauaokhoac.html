@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna Wardrobe</title>
+    <link rel="stylesheet" href="text.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo-title">
+              <img src="img/Logo.jpg" alt="Logo" class="logo">
+              <span class="title">Luna Wardrobe</span>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links" id="navLinks">
+              <li><a href="index.html">Trang Chủ</a></li>
+              <li><a href="Sanpham.html">Sản Phẩm</a></li>
+              <li><a href="Giohang.html">Giỏ Hàng</a></li>
+              <li><a href="Login.html">Đăng Nhập</a></li>
+              <li><a href="Gioithieu.html">Giới Thiệu</a></li>
+              <li><a href="Lienhe.html">Liên Hệ</a></li>
+            </ul>
+          </div>
+          
+    </header>   
+    <h2 class="hss">Mẫu Áo Khoác</h2>
+    <main>
+        <section id="products">
+                <div class="product">
+                    <img src="img/ao-khoa-kaki.jpg" alt="Áo khoác kaki">
+                    <h3>Áo khoác kaki</h3>
+                    <p>Giá tiền: 220.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Áo khoác kaki',
+                        price: '220000',
+                        desc: 'Áo khoác bomber dáng ngắn, cổ tròn bo viền, tay dài phồng nhẹ ở vai và bo chun ở cổ tay. Thiết kế cài nút phía trước tiện lợi. Hai túi chéo lớn ở phía trước vừa thời trang vừa tiện dụng để đựng đồ cá nhân khi dạo phố Thủ Dầu Một. Gấu áo bo chun tạo form dáng khỏe khoắn',
+                        img: 'img/ao-khoa-kaki.jpg',
+                        material: 'Dày dặn, đứng form, phù hợp với nhiều hoàn',
+                        color: 'Be trung tính',
+                        style: 'Bomber cá tính và năng động'
+                    })">Xem chi tiết</a>    
+                </div>
+
+                <div class="product">
+                    <img src="img/ao-khoac-bomber.jpg" alt="Áo khoác bomber">
+                    <h3>Áo khoác bomber</h3>
+                    <p>Giá tiền: 540.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Áo khoác bomber',
+                        price: '540000',
+                        desc: 'Áo khoác bomber dáng rộng thoải mái (unisex), cổ đứng có khóa kéo cao, tay dài rộng với bo chun ở cổ tay. Thiết kế khóa kéo dọc thân trước tiện lợi. Điểm nhấn là các chi tiết túi hộp có khóa kéo ở ngực và tay áo, mang đậm phong cách phi công mạnh mẽ và hiện đại. Gấu áo bo chun tạo form dáng khỏe khoắn và năng động',
+                        img: 'img/ao-khoac-bomber.jpg',
+                        material: 'Dày dặn, bền bỉ, bảo vệ tốt trong thời tiết se lạnh.',
+                        color: 'Kem trung tính',
+                        style: 'Hiện đại và cá tính, phù hợp cho cả nam và nữ.'
+                    })">Xem chi tiết</a>    
+                </div>
+                
+                <div class="product">
+                    <img src="img/ao-khoac-cardigan-ngan.jpg" alt="áo khoác cardigan ngắn">
+                    <h3>Áo khoác cardigan ngắn</h3>
+                    <p>Giá tiền: 250.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Áo cardigan ngắn',
+                        price: '250000',
+                        desc: 'Áo cardigan dệt kim dáng ngắn, cổ tròn đơn giản. Thiết kế cài nút phía trước tiện lợi. Tay dài giữ ấm, gấu áo và cổ tay bo nhẹ nhàng, tạo form dáng gọn gàng và thanh lịch.',
+                        img: 'img/ao-khoac-cardigan-ngan.jpg',
+                        material: 'Sợi dệt kim mềm mại, có độ co giãn nhẹ',
+                        color: 'Đỏ',
+                        style: 'Cardigan dáng ngắn thanh lịch '
+                    })">Xem chi tiết</a>    
+                </div>
+                
+                <div class="product">
+                    <img src="img/ao-khoac-cardigan-rong.jpg" alt=" Áo khoác cardigan rộng">
+                    <h3>Áo khoác cardigan rộng</h3>
+                    <p>Giá tiền: 220.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Áo cardigan rộng',
+                        price: '220000',
+                        desc: ' Áo cardigan dệt kim dáng rộng, cổ chữ V sâu, tay dài rộng rãi. Thiết kế cài nút phía trước tiện lợi. Điểm nhấn là hai túi lớn ở phía trước, vừa giữ ấm tay vừa tạo vẻ ngoài casual và tiện dụng. Gấu áo và cổ tay bo nhẹ nhàng.',
+                        img: 'img/ao-khoac-cardigan-rong.jpg',
+                        material: 'Dệt kim mềm mại và ấm áp',
+                        color: 'Nâu',
+                        style: ' Rộng rãi, thoải mái'
+                    })">Xem chi tiết</a>    
+                </div>
+                
+                <div class="product">
+                    <img src="img/ao-blazer.jpg" alt="Áo blazer">
+                    <h3>Áo blazer</h3>
+                    <p>Giá tiền: 600.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Áo blazer',
+                        price: '600000',
+                        desc: 'Áo blazer dáng suông (oversized) thoải mái, cổ vest truyền thống, tay dài. Thiết kế hai nút cài phía trước tạo vẻ ngoài chỉn chu và lịch sự. Hai túi giả ở phía trước mang tính thẩm mỹ cao. Áo có lớp lót bên trong mềm mại.',
+                        img: 'img/ao-blazer.jpg',
+                        material: 'Vải tây',
+                        color: 'Đen',
+                        style: 'Suông thoải mái nhưng vẫn giữ được nét thanh lịch'
+                    })">Xem chi tiết</a>    
+                </div>
+                
+                <div class="product">
+                    <img src="img/ao-khoac-da.jpg" alt="Áo khoac da">
+                    <h3>Áo khoác da</h3>
+                    <p>Giá tiền: 900.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Áo khoác da',
+                        price: '900000',
+                        desc: ' Áo khoác da dáng bomber cổ điển, cổ bẻ gập lịch sự, tay dài rộng rãi với bo chun ở cổ tay. Thiết kế khóa kéo dọc thân trước chắc chắn. Điểm nhấn là túi nắp vuông ở ngực và hai túi chéo bên hông tiện dụng. Gấu áo bo chun tạo form dáng khỏe khoắn và cá tính.',
+                        img: 'img/ao-khoac-da.jpg',
+                        material: 'Da',
+                        color: 'Nâu',
+                        style: 'Thoải mái, dễ dàng vận động.'
+                    })">Xem chi tiết</a>    
+                </div>
+                
+                <div class="product">
+                    <img src="img/ao-mang-to.jpg" alt="Áo măng tô">
+                    <h3>Áo măng tô</h3>
+                    <p>Giá tiền: 700.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Áo măng tô',
+                        price: '700000',
+                        desc: 'Áo măng tô dáng dài qua gối, cổ bẻ ve áo rộng, tay dài có đai điều chỉnh ở cổ tay. Thiết kế hai hàng nút cài phía trước tạo vẻ ngoài trang trọng và thời thượng. Đai eo rời có thể thắt nơ hoặc cài khóa giúp tôn vòng eo. Hai túi chéo sâu tiện lợi ở hai bên',
+                        img: 'img/ao-mang-to.jpg',
+                        material: 'Dày dặn, chắn gió nhẹ và giữ ấm tốt',
+                        color: 'Be',
+                        style: ' Dài tôn dáng và kín đáo.'
+                    })">Xem chi tiết</a>    
+                </div>
+                
+                <div class="product">
+                    <img src="img/ao-khoac-jean.jpg" alt="Áo khóac jean">
+                    <h3>Áo khoác jean</h3>
+                    <p>Giá tiền: 420.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Áo khoác jean',
+                        price: '420000',
+                        desc: ' Áo khoác jean dáng ngắn trẻ trung, cổ bẻ cổ điển, tay dài phồng nhẹ ở vai và bo chun ở cổ tay. Thiết kế cài nút phía trước tiện lợi. Điểm nhấn là hai túi hộp lớn có nắp và nút cài ở ngực, mang đậm phong cách utility mạnh mẽ. Gấu áo bo nhẹ tạo form dáng năng động.',
+                        img: 'img/ao-crop-top-co-vuong.jpg',
+                        material: 'Vải bò ',
+                        color: 'Đen',
+                        style: 'Trẻ trung và năng động.'
+                    })">Xem chi tiết</a>    
+                </div>
+                
+                <div class="product">
+                        <img src="img/ao-khoac-tran-bong.jpg" alt="Áo khoác trần bông">
+                        <h3>Áo khoác trần bông</h3>
+                        <p>Giá tiền: 600.000VND</p>
+                        <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                            name: 'Áo khoác trần bông',
+                            price: '600000',
+                            desc: 'Áo khoác trần bông dáng suông thoải mái, cổ tròn kín đáo được lót lông mềm mại và ấm áp. Tay dài rộng rãi với phần cổ tay được bo lông cùng màu, tạo điểm nhấn dễ thương và giữ ấm hiệu quả. Thiết kế cài nút phía trước tiện lợi.',
+                            img: 'img/ao-khoac-tran-bong.jpg',
+                            material: 'Bông',
+                            color: 'Xanh nhạt',
+                            style: ' Suông thoải mái, dễ dàng vận động.'
+                        })">Xem chi tiết</a>    
+                    </div>
+                                    
+                <div class="product">
+                    <img src="img/ao-khoac-du.jpg" alt="Áo khoác dù">
+                    <h3>Áo khoác dù</h3>
+                    <p>Giá tiền: 550.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Áo khoác dù',
+                        price: '550000',
+                        desc: 'Áo khoác dù dáng suông rộng rãi, cổ bẻ mềm mại, tay dài có bo chun nhẹ ở cổ tay. Thiết kế khóa kéo dọc thân trước tiện lợi. Hai túi chéo ở phía trước đơn giản và tiện dụng. Gấu áo có dây rút điều chỉnh độ rộng.',
+                        img: 'img/ao-khoac-du.jpg',
+                        material: 'Dù mỏng nhẹ, thoáng mát.',
+                        color: 'Tím nhạt',
+                        style: 'Suông rộng rãi, thoải mái khi mặc.y'
+                    })">Xem chi tiết</a>    
+                </div>   
+        </section>
+    </main>
+    <footer>
+        <p>Luna Wardrobe &copy; 2025. All rughts reserved.</p>
+    </footer>
+</body>
+
+
+<script>
+    function saveProductDetail(product) {
+      localStorage.setItem('selectedProduct', JSON.stringify(product));
+    }
+  </script>
+  
+<!-- Khung modal hiển thị ảnh -->
+<div id="imageModal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modalImg" src="" alt="zoom ảnh">
+  </div>
+  <script>
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImg");
+  
+    // Gắn sự kiện click vào tất cả ảnh trong sản phẩm
+    document.querySelectorAll("#products .product img").forEach(img => {
+      img.addEventListener("click", () => {
+        modal.style.display = "block";
+        modalImg.src = img.src;
+      });
+    });
+  
+    // Hàm để đóng modal
+    function closeModal() {
+      modal.style.display = "none";
+    }
+  
+    // Đóng modal khi bấm ngoài ảnh
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        closeModal();
+      }
+    }
+  </script>
+
+</html>

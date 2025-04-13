@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna Wardrobe</title>
+    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+>
+</head>
+<body>
+   <div class="login-container">
+    <img src="img/login.jpg" alt="Avatar" class="avatar">
+    <h2>Login</h2>
+    <form action="login.php" method="post">
+        <div class="input-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <span id="togglePassword"><i class="fa-solid fa-eye" id="eyeIcon"></i></span>
+        </div>
+
+        <button type="submit">Login</button>
+    </form>
+   </div> 
+   <script>
+    const toggle = document.getElementById('togglePassword');
+    const password = document.getElementById('password');
+    const eyeIcon = document.getElementById('eyeIcon');
+
+    toggle.addEventListener('click', function () {
+        const isPassword = password.type === 'password';
+        password.type = isPassword ? 'text' : 'password';
+        eyeIcon.className = isPassword ? 'fa-solid fa-eye-slash' : 'fa-solid fa-eye';
+    });
+</script>
+</body>
+</html>

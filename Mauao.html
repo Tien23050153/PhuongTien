@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna Wardrobe</title>
+    <link rel="stylesheet" href="text.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo-title">
+              <img src="img/Logo.jpg" alt="Logo" class="logo">
+              <span class="title">Luna Wardrobe</span>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links" id="navLinks">
+              <li><a href="index.html">Trang Chủ</a></li>
+              <li><a href="Sanpham.html">Sản Phẩm</a></li>
+              <li><a href="Giohang.html">Giỏ Hàng</a></li>
+              <li><a href="Login.html">Đăng Nhập</a></li>
+              <li><a href="Gioithieu.html">Giới Thiệu</a></li>
+              <li><a href="Lienhe.html">Liên Hệ</a></li>
+            </ul>
+          </div>
+          
+    </header>
+    <h2 class="hss">Mẫu Áo</h2>
+        <main>
+            <section id="products">
+                    <div class="product">
+                        <img src="img/ao-crop-top-co-vuong.jpg" alt="Áo croptop cổ vuông ">
+                        <h3>Áo croptop cổ vuông</h3>
+                        <p>Giá tiền: 180.000VND</p>
+                        <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                            name: 'Áo croptop cổ vuông',
+                            price: '180000',
+                            desc: 'Áo croptop ôm nhẹ, cổ vuông trẻ trung và tôn dáng. Tay áo ngắn phồng nhẹ nhàng, viền bèo nữ tính. Điểm nhấn là phần rút dây ở giữa ngực, có thể điều chỉnh độ nhún và tạo kiểu',
+                            img: 'img/ao-crop-top-co-vuong.jpg',
+                            material: 'Cotton co giãn',
+                            color: 'Trắng kem',
+                            style: 'Croptop trẻ trung, năng động'
+                        })">Xem chi tiết</a>    
+                    </div>
+
+                    <div class="product">
+                        <img src="img/ao-crop-top-tay-beo.jpg" alt="Áo croptop tay bèo">
+                        <h3>Áo croptop tay bèo</h3>
+                        <p>Giá tiền: 220.000VND</p>
+                        <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                            name: 'Áo croptop tay bèo',
+                            price: '220000',
+                            desc: 'Áo croptop ôm vừa vặn, tôn lên đường cong cơ thể. Thiết kế cổ vuông gợi cảm, tay áo ngắn phồng nhẹ nhàng với viền bèo nữ tính. Điểm nhấn là phần nhún chun dọc thân trước tạo hiệu ứng quyến rũ và dây rút ở giữa ngực có thể điều chỉnh. Dây áo mảnh cột sau cổ tạo vẻ ngoài độc đáo và gợi cảm',
+                            img: 'img/ao-crop-top-tay-beo.jpg',
+                            material: 'Cotton co giãn',
+                            color: 'Hồng pastel',
+                            style: 'Croptop trẻ trung, gợi cảm'
+                        })">Xem chi tiết</a>
+                    </div>
+                      
+                    <div class="product">
+                        <img src="img/ao-thun-from-rong.jpg" alt="Áo thun form rộng">
+                        <h3>Áo thun form rộng</h3>
+                        <p>Giá tiền: 220.000VND</p>
+                        <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                            name: 'Áo thun form rộng',
+                            price: '220000',
+                            desc: 'Áo thun dáng suông basic tee cổ tròn, tay ngắn, mang đến sự thoải mái và dễ dàng vận động trong mọi hoạt động hàng ngày',
+                            img: 'img/ao-thun-from-rong.jpg',
+                            material: 'Cotton mềm mại, thoải mái ',
+                            color: 'Trắng ',
+                            style: 'Basic dễ mặc, phù hợp với nhiều phong cách'
+                        })">Xem chi tiết</a>
+                    </div>
+                      
+                    <div class="product">
+                        <img src="img/ao-hai-day.jpg" alt="Áo hay dây">
+                        <h3>Áo hai dây</h3>
+                        <p>Giá tiền: 150.000VND</p>
+                        <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                            name: 'Áo hai dây',
+                            price: '150000',
+                            desc: 'Áo hai dây mảnh, cổ vuông trẻ trung và tôn lên phần xương quai xanh gợi cảm. Thiết kế ôm nhẹ ở phần ngực và xòe nhẹ ở phần eo, tạo cảm giác thoải mái và tôn dáng. Điểm nhấn là chiếc nơ to bản cột ở phía trước cổ, mang đến vẻ ngoài nữ tính và thanh lịch.',
+                            img: 'img/ao-hai-day.jpg',
+                            material: 'Voan mềm mại, thoáng mát',
+                            color: 'Trắng kem',
+                            style: 'mát mẻ và gợi cảm'
+                        })">Xem chi tiết</a>
+                    </div>
+                      
+                    <div class="product">
+                        <img src="img/ao-tre-vai.jpg" alt="Áo trễ vai">
+                        <h3>Áo trễ vai</h3>
+                        <p>Giá tiền: 400.000VND</p>
+                        <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                            name: 'Áo trễ vai',
+                            price: '400000',
+                            desc: 'Áo trễ vai quyến rũ, khoe trọn bờ vai thon thả. Thiết kế bèo nhún mềm mại ở phần ngực tạo điểm nhấn nữ tính và duyên dáng. Tay dài rộng rãi, thoải mái, lý tưởng cho những ngày thời tiết dễ chịu.',
+                            img: 'img/ao-tre-vai.jpg',
+                            material: 'Cotton thoáng mát',
+                            color: 'Trắng tinh khôi',
+                            style: 'Trễ vai gợi cảm và thời trang'
+                        })">Xem chi tiết</a>
+                    </div>
+                      
+                    <div class="product">
+                        <img src="img/ao-yem.jpg" alt="Áo yếm">
+                        <h3>Áo yếm</h3>
+                        <p>Giá tiền: 150.000VND</p>
+                        <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                            name: 'Áo yếm',
+                            price: '150000',
+                            desc: 'Áo croptop dáng yếm, cổ chữ V khoét sâu gợi cảm, không tay. Thiết kế dây buộc sau cổ tạo điểm nhấn cá tính và có thể điều chỉnh độ dài. Phần dưới ngực có đường chun nhẹ tạo độ ôm vừa vặn và thoải mái.',
+                            img: 'img/ao-crop-top-co-vuong.jpg',
+                            material: 'Cotton thoáng mát, thoải mái khi mặc',
+                            color: 'Họa tiết kẻ sọc caro',
+                            style: 'Croptop gợi cảm và cá tính.'
+                        })">Xem chi tiết</a>
+                    </div>
+                      
+                    <div class="product">
+                        <img src="img/ao-lech-vai.jpg" alt="Áo lệch vai">
+                        <h3>Áo lệch vai</h3>
+                        <p>Giá tiền: 320.000VND</p>
+                        <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                            name: 'Áo lệch vai',
+                            price: '320000',
+                            desc: 'Áo thun ôm vừa vặn, thiết kế lệch vai gợi cảm, khoe khéo bờ vai thon thả. Điểm nhấn là đường viền ren mềm mại dọc theo cổ áo và tay áo, cùng chiếc nơ xinh xắn cột bên vai, tạo vẻ ngoài điệu đà và thu hút.',
+                            img: 'img/ao-lech-vai.jpg',
+                            material: 'Thun gân co giãn, thoải mái khi mặc',
+                            color: 'Xanh nhạt',
+                            style: 'Lệch vai độc đáo và gợi cảm'
+                        })">Xem chi tiết</a>
+                    </div>
+                      
+                    <div class="product">
+                        <img src="img/ao-so-mi.jpg" alt="Áo sơ mi kẻ sọc dài tay">
+                        <h3>Áo sơ mi kẻ sọc dáng rộng</h3>
+                        <p>Giá tiền: 220.000VND</p>
+                        <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                            name: ' Áo sơ mi kẻ sọc dài tay',
+                            price: '220000',
+                            desc: 'Áo sơ mi dáng rộng, cổ bẻ cổ điển, tay dài có thể xắn gấu tạo nhiều kiểu mặc. Thiết kế đơn giản, thoải mái, mang đến vẻ ngoài năng động và thư thái. Túi ngực nhỏ phía trước có chi tiết thêu nhỏ xinh xắn.',
+                            img: 'img/ao-so-mi.jpg',
+                            material: 'Mềm mại, thoáng mát',
+                            color: 'Họa tiết kẻ sọc dọc ',
+                            style: 'Rộng rãi, thoải mái, dễ dàng vận động'
+                        })">Xem chi tiết</a>                     
+                    </div>
+                      
+                    <div class="product">
+                        <img src="img/ao-hai-day-mau-xanh.jpg" alt="Áo hai dây thun ">
+                        <h3>Áo hai dây thun gân</h3>
+                        <p>Giá tiền: 170.000VND</p>
+                        <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                            name: 'Áo hai dây thun gân',
+                            price: '170000',
+                            desc: 'Áo hai dây bản vừa, cổ chữ V khoét nhẹ, tôn lên vẻ thanh thoát của phần cổ và vai. Thiết kế ôm sát cơ thể, tôn đường cong một cách tinh tế. Điểm nhấn là đường viền ren mềm mại dọc theo viền cổ và chân áo, cùng chiếc nơ nhỏ xinh xắn ở giữa ngực, tạo vẻ ngoài ngọt ngào và nữ tính.',
+                            img: 'img/ao-hai-day-mau-xanh.jpg',
+                            material: 'Thun gân co giãn, ôm dáng và thoải mái.',
+                            color: ' Xanh da trời tươi mát và dịu nhẹ.',
+                            style: 'Nữ tính, gợi cảm, nhẹ nhàng'
+                        })">Xem chi tiết</a>                     
+                    </div>
+
+                    <div class="product">
+                        <img src="img/ao-thun-buoc-day.jpg" alt="Áo thun khoét eo vạt nhọn">
+                        <h3>Áo thun khoét eo vạt nhọn</h3>
+                        <p>Giá tiền: 110.000VND</p>
+                        <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                            name: 'Áo thun khoét eo vạt nhọn',
+                            price: '110000',
+                            desc: 'Áo thun crop top ngắn tay, cổ tròn basic. Điểm nhấn độc đáo là chi tiết buộc vạt ở một bên hông, tạo hiệu ứng rút nhún cá tính và giúp bạn khoe khéo vòng eo thon gọn.',
+                            img: 'img/ao-thun-buoc-day.jpg',
+                            material: 'Thun cotton mềm mại và thoải mái.',
+                            color: 'Xanh nhạt',
+                            style: 'Trẻ trung và năng động.'
+                        })">Xem chi tiết</a>                    
+                    </div>                     
+                </div>
+            </section>
+        </main>
+    <footer>
+        <p>Luna Wardrobe &copy; 2025. All rughts reserved.</p>
+    </footer>
+</body>
+
+<script>
+    function saveProductDetail(product) {
+      localStorage.setItem('selectedProduct', JSON.stringify(product));
+    }
+  </script>
+  
+<!-- Khung modal hiển thị ảnh -->
+<div id="imageModal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modalImg" src="" alt="zoom ảnh">
+  </div>
+  <script>
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImg");
+  
+    // Gắn sự kiện click vào tất cả ảnh trong sản phẩm
+    document.querySelectorAll("#products .product img").forEach(img => {
+      img.addEventListener("click", () => {
+        modal.style.display = "block";
+        modalImg.src = img.src;
+      });
+    });
+  
+    // Hàm để đóng modal
+    function closeModal() {
+      modal.style.display = "none";
+    }
+  
+    // Đóng modal khi bấm ngoài ảnh
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        closeModal();
+      }
+    }
+  </script>
+    
+</div>
+
+</html>

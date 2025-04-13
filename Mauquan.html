@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Luna Wardrobe </title>
+    <link rel="stylesheet" href="text.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo-title">
+              <img src="img/Logo.jpg" alt="Logo" class="logo">
+              <span class="title">Luna Wardrobe</span>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links" id="navLinks">
+              <li><a href="index.html">Trang Chủ</a></li>
+              <li><a href="Sanpham.html">Sản Phẩm</a></li>
+              <li><a href="Giohang.html">Giỏ Hàng</a></li>
+              <li><a href="Login.html">Đăng Nhập</a></li>
+              <li><a href="Gioithieu.html">Giới Thiệu</a></li>
+              <li><a href="Lienhe.html">Liên Hệ</a></li>
+            </ul>
+          </div>
+          
+    </header>
+    <h2 class="hss">Mẫu Quần</h2>
+    <main>
+        <section id="products">
+                <div class="product">
+                    <img src="img/quan-jean-ong-dung-dang-dai-that-no-caro.jpg" alt="Quần jeans ống rộng đứng dáng dài thắt nơ caro">
+                    <h3>Quần jeans ống rộng thắt nơ caro</h3>
+                    <p>Giá tiền: 532.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Quần jeans ống rộng thắt nơ caro',
+                        price: '532000',
+                        desc: 'Quần ống rộng suông dài, cạp cao tôn dáng. Điểm nhấn đặc biệt là chiếc nơ buộc ở eo với họa tiết gingham xanh trắng tươi tắn, mang đến vẻ ngoài vừa thanh lịch vừa trẻ trung. Phần gấu quần có thể xắn lên để lộ họa tiết gingham đồng điệu, tạo thêm điểm nhấn thú vị.',
+                        img: 'img/quan-jean-ong-dung-dang-dai-that-no-caro.jpg',
+                        material: 'Vải jean',
+                        color: 'Kem',
+                        style: 'Ông rộng thoải mái, cạp cao tôn dáng'
+                    })">Xem chi tiết</a>    
+                </div>
+                
+                <div class="product">
+                    <img src="img/quan-short-jean.jpg" alt=" Quần short jean">
+                    <h3>Quần short jean</h3>
+                    <p>Giá tiền: 180.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Quần short jean',
+                        price: '180000',
+                        desc: 'Quần short jean ống rộng thoải mái, cạp cao tôn dáng. Thiết kế có hai túi hộp lớn ở phía trước tạo điểm nhấn utility mạnh mẽ và tiện dụng. Gấu quần xắn nhẹ. Điểm đặc biệt là chiếc thắt lưng đen đi kèm với khóa vuông đơn giản nhưng cá tính, giúp bạn tạo điểm nhấn cho vòng eo.',
+                        img: 'img/quan-short-jean.jpg',
+                        material: 'Bò',
+                        color: 'Xanh denim wash bụi bặm và cá tính',
+                        style: 'Ống rộng thoải mái và năng động.'
+                    })">Xem chi tiết</a>    
+                </div>
+                   
+                <div class="product">
+                    <img src="img/quan-the-thao.jpg" alt="Quần thể thao">
+                    <h3>Quần thể thao</h3>
+                    <p>Giá tiền: 390.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Quần thể thao',
+                        price: '390000',
+                        desc: 'Quần thể thao dáng ống rộng thoải mái, cạp chun co giãn có dây rút điều chỉnh để vừa vặn với vòng eo. Thiết kế có đường sọc dọc hai bên ống quần tạo điểm nhấn thể thao và năng động. Chất liệu mềm mại, không gò bó, lý tưởng cho những hoạt động nhẹ nhàng hoặc thư giãn tại nhà.',
+                        img: 'img/quan-the-thao.jpg',
+                        material: 'Nỉ',
+                        color: 'Hồng',
+                        style: 'Ống rộng thoải mái vận động.'
+                    })">Xem chi tiết</a>    
+                </div>
+                
+                <div class="product">
+                    <img src="img/quan-lung-ong-rong-dang-suong-nhieu-tui.jpg" alt="Quần lửng ống rộng dáng suông nhiều túi">
+                    <h3>Quần lửng ống rộng dáng suông nhiều túi</h3>
+                    <p>Giá tiền: 400.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Quần lửng ống rộng dáng suông nhiều túi',
+                        price: '400000',
+                        desc: 'Quần jean lửng ống rộng thoải mái, cạp vừa. Thiết kế đặc trưng với nhiều túi hộp lớn ở hai bên đùi, vừa tạo điểm nhấn phong cách utility mạnh mẽ vừa tăng tính tiện dụng để đựng các vật dụng cá nhân khi dạo phố. Gấu quần có thể xắn lên để thay đổi phong cách.',
+                        img: 'img/quan-lung-ong-rong-dang-suong-nhieu-tui.jpg',
+                        material: 'vải bò',
+                        color: 'Xanh denim wash bụi bặm và cá tính',
+                        style: 'Cổ vuông, ngắn tay'
+                    })">Xem chi tiết</a>    
+                </div>
+                
+                <div class="product">
+                    <img src="img/quan-jean-ong-loe-cap-tre-phong-cach-co-dien.jpg" alt="Quần jean ống loe cạp trễ phong cách cổ điển">
+                    <h3>Quần jean ống loe cạp trễ phong cách cổ điển</h3>
+                    <p>Giá tiền: 220.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Quần jean ống loe cạp trễ phong cách cổ điển',
+                        price: '220000',
+                        desc: 'Quần jeans dáng ôm ở phần đùi và loe rộng từ đầu gối xuống, tạo hiệu ứng kéo dài chân và mang đậm phong cách vintage. Cạp cao tôn dáng. Thiết kế wash ombre độc đáo với hiệu ứng chuyển màu từ xám nhạt đến xám đen, tạo điểm nhấn cá tính và thời thượng.',
+                        img: 'img/quan-jean-ong-loe-cap-tre-phong-cach-co-dien.jpg',
+                        material: 'Vải bò',
+                        color: 'Đen',
+                        style: 'ống loe retro và tôn dáng'
+                    })">Xem chi tiết</a>    
+                </div>
+                
+                <div class="product">
+                    <img src="img/quan-lung-ong-rong-dang-suong-phong-cach-co-dien.jpg" alt=" Quần lửng ống rộng dáng suông phong cách cổ điển">
+                    <h3>Quần lửng ống rộng phong cách cổ điển</h3>
+                    <p>Giá tiền: 460.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Quần lửng ống rộng dáng suông phong cách cổ điển',
+                        price: '460000',
+                        desc: 'Quần lửng ống rộng dáng suông thoải mái, cạp vừa. Thiết kế độc đáo với đường may tương phản màu trắng nổi bật, tạo điểm nhấn cá tính. Quần có túi hai bên tiện lợi. Chiều dài lỡ vừa phải, mang đến sự thoải mái và phong cách thời trang ấn tượng.',
+                        img: 'img/quan-lung-ong-rong-dang-suong-phong-cach-co-dien.jpg',
+                        material: 'Vải bò',
+                        color: 'Đỏ',
+                        style: 'ống rộng thoải mái và phong cách.'
+                    })">Xem chi tiết</a>    
+                </div>
+                
+                <div class="product">
+                    <img src="img/Yem-nu-ong-rong-lien-than.jpg" alt=" yếm nữ ống rộng liền thân">
+                    <h3>Yếm nữ ống rộng liền thân</h3>
+                    <p>Giá tiền: 220.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Yếm nữ ống rộng liền thân',
+                        price: '220000',
+                        desc: 'Quần yếm dáng ống rộng suông dài, yếm có dây quai điều chỉnh độ dài, phía trước có túi hộp nhỏ tiện lợi. Thiết kế wash loang nhẹ nhàng tạo hiệu ứng màu sắc độc đáo và trẻ trung. Quần có túi hai bên và phía sau.',
+                        img: 'img/Yem-nu-ong-rong-lien-than.jpg',
+                        material: 'Vải bò',
+                        color: 'Kem',
+                        style: 'ống rộng thoải mái và năng động.'
+                    })">Xem chi tiết</a>    
+                </div>
+                
+                <div class="product">
+                    <img src="img/quan-short-ong-rong.jpg" alt=" Quần short ống rộng">
+                    <h3>Quần short ống rộng</h3>
+                    <p>Giá tiền:250.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Quần short ống rộng',
+                        price: '250000',
+                        desc: 'Quần short ống rộng thoải mái, cạp cao với chi tiết xếp ly phía trước tạo độ phồng nhẹ và vẻ ngoài chỉn chu. Điểm nhấn là chiếc thắt lưng da màu nâu đi kèm với khóa kim loại đơn giản, giúp bạn tạo điểm nhấn cho vòng eo và tăng thêm vẻ thanh lịch. Quần có túi hai bên tiện lợi.',
+                        img: 'img/quan-short-ong-rong.jpg',
+                        material: 'Kaki',
+                        color: 'Xám',
+                        style: 'ống rộng thoải mái, cạp cao tôn dáng.'
+                    })">Xem chi tiết</a>    
+                </div>
+                
+                <div class="product">
+                    <img src="img/quan-ong-rong-cap-cao.jpg" alt=" Quần ống rộng cạp cao">
+                    <h3>Quần ống rộng cạp cao</h3>
+                    <p>Giá tiền: 500.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Quần ống rộng cạp cao',
+                        price: '500000',
+                        desc: 'Quần ống rộng suông dài, cạp cao tôn dáng. Thiết kế vạt chéo độc đáo ở phía trước tạo điểm nhấn thời trang ấn tượng và vẻ ngoài cá tính. Quần có một nút cài và khóa kéo ẩn. Chất liệu có độ rủ vừa phải, tạo sự thoải mái khi di chuyển.',
+                        img: 'img/quan-ong-rong-cap-cao.jpg',
+                        material: 'Kate mềm mại',
+                        color: 'Đen',
+                        style: ' ống rộng thoải mái, cạp cao tôn dáng.'
+                    })">Xem chi tiết</a>    
+                </div>
+                
+                <div class="product">
+                    <img src="img/quan-ong-rong.jpg" alt=" Quần ống rộng">
+                    <h3>Quần ống rộng</h3>
+                    <p>Giá tiền: 220.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Quần ống rộng',
+                        price: '220000',
+                        desc: 'Quần ống rộng dáng suông rộng rãi, cạp chun co giãn có dây rút điều chỉnh để vừa vặn với vòng eo. Thiết kế xếp ly nhẹ ở phần eo tạo độ phồng tự nhiên và thoải mái khi vận động. Quần có túi hai bên tiện lợi. Chiều dài lỡ vừa phải, lý tưởng cho tiết trời trưa ấm áp.',
+                        img: 'img/quan-ong-rong.jpg',
+                        material: 'Voan',
+                        color: 'Kem',
+                        style: 'ống rộng thoải mái và năng động.y'
+                    })">Xem chi tiết</a>    
+                </div>
+                
+        </section>
+    </main>
+    <footer>
+        <p>Luna Wardrobe &copy; 2025. All rughts reserved.</p>
+    </footer>
+</body>
+
+<script>
+    function saveProductDetail(product) {
+      localStorage.setItem('selectedProduct', JSON.stringify(product));
+    }
+  </script>
+  
+<!-- Khung modal hiển thị ảnh -->
+<div id="imageModal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modalImg" src="" alt="zoom ảnh">
+  </div>
+  <script>
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImg");
+  
+    // Gắn sự kiện click vào tất cả ảnh trong sản phẩm
+    document.querySelectorAll("#products .product img").forEach(img => {
+      img.addEventListener("click", () => {
+        modal.style.display = "block";
+        modalImg.src = img.src;
+      });
+    });
+  
+    // Hàm để đóng modal
+    function closeModal() {
+      modal.style.display = "none";
+    }
+  
+    // Đóng modal khi bấm ngoài ảnh
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        closeModal();
+      }
+    }
+  </script>
+
+</html>

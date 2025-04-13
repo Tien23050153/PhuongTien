@@ -1,77 +1,463 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sơ yếu lý lịch</title>
-    <link rel="stylesheet" href="BaiCaNhan.css">
-    
+    <title>Luna Wardrobe</title>
+    <link rel="stylesheet" href="text.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Trần Ngọc Phượng Tiên</h1>
-        <p style="text-align: center;"> Lập trình viên </p>
-
-        <div class="section">
-            <h2>Giới thiệu bản thân</h2>
-            <p>Xin chào! Tôi là Trần Ngọc Phượng Tiên. Tôi đam mê thiết kế lập trình và thiết kế web. Tôi là một lập trình viên có kỹ năng và thành thạo các công cụ thiết kế đồ họa như Photoshop và Sketch.</p>
-            <p><strong>Tuổi:</strong> 20</p>
-            <p><strong>Email:</strong> <a href="mailto:23050153@student.bdu.edu.vn">23050153@student.bdu.edu.vn</a></p>
-            <p><strong>Điện thoại:</strong> 0386078372</p>
-            <p><strong>Địa chỉ:</strong> Trung An, Củ Chi, TP.HCM</p>
-        </div>
-
-        <div class="section skills">
-            <h2>Kỹ năng chuyên môn</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>C++</li>
-                <li>Python</li>
-                <li>SQL</li>
+    <header>
+        <div class="navbar">
+            <div class="logo-title">
+              <img src="img/Logo.jpg" alt="Logo" class="logo">
+              <span class="title">Luna Wardrobe</span>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links" id="navLinks">
+              <li><a href="index.html">Trang Chủ</a></li>
+              <li><a href="Sanpham.html">Sản Phẩm</a></li>
+              <li><a href="Giohang.html">Giỏ Hàng</a></li>
+              <li><a href="Login.html">Đăng Nhập</a></li>
+              <li><a href="Gioithieu.html">Giới Thiệu</a></li>
+              <li><a href="Lienhe.html">Liên Hệ</a></li>
             </ul>
-        </div>
-
-        <div class="section experience">
-            <h2>Kinh nghiệm làm việc</h2>
-            <div class="job">
-                <p class="job-title">Nhập môn Kỹ thuật Phần mềm</p>
-                <p class="date">Tháng 10, 2024 </p>
-                <p>Tham gia nghiên cứu và học tập các khái niệm cơ bản về kỹ thuật phần mềm, bao gồm quy trình phát triển phần mềm, phân tích yêu cầu, và thiết kế hệ thống. Hỗ trợ xây dựng các dự án nhỏ để áp dụng lý thuyết vào thực tế.</p>
-            </div>
-            <div class="job">
-                <p class="job-title">Lập trình Hướng Đối tượng và Ứng dụng</p>
-                <p class="date">Tháng 3, 2024</p>
-                <p>Phát triển các ứng dụng sử dụng lập trình hướng đối tượng, tập trung vào việc áp dụng các nguyên tắc như đóng gói, kế thừa và đa hình. Thực hành xây dựng các dự án phần mềm có cấu trúc rõ ràng và tái sử dụng được.</p>
-            </div>
-            <div class="job">
-                <p class="job-title">Cấu trúc Dữ liệu và Giải thuật</p>
-                <p class="date">Tháng 2, 2024 </p>
-                <p>Học và áp dụng các cấu trúc dữ liệu cơ bản như danh sách liên kết, cây, và đồ thị, cùng với các giải thuật tối ưu như sắp xếp, tìm kiếm và đệ quy. Thực hiện các bài tập thực hành để cải thiện hiệu suất xử lý dữ liệu.</p>
-            </div>
-        </div>
-
-        <div class="section education">
-            <h2>Học vấn</h2>
-            <div class="edu">
-                <p class="edu-title"> Công nghệ Thông tin từ Đại học </p>
-                <p class="date">2024-2025</p>
-                <p>Tận dụng các khung agile để cung cấp bản tóm tắt mạnh mẽ cho các tổng quan cấp cao. Các phương pháp tiếp cận lặp lại đối với chiến lược doanh nghiệp thúc đẩy tư duy hợp tác để nâng cao giá trị tổng thể.</p>
-            </div>
-            
-        </div>
-
-        <div class="section contact-info">
-            <h2>Liên hệ</h2>
-            <p><strong>Địa chỉ:</strong> Trung An, Củ Chi, TP.HCM</p>
-            <p><strong>Điện thoại:</strong> 0386078372</p>
-            <p><strong>Email:</strong> <a href="mailto:23050153@student.bdu.edu.vn">23050153@student.bdu.edu.vn</a></p>
+          </div>
           
-            <p><a href="https://www.facebook.com/share/1E4s5zJ9uW/?mibextid=wwXIfr">Facebook</a></p>
-            <p><a href="https://www.instagram.com/templateflip">Instagram</a></p>
-            <p><a href="https://github.com/settings/appearance">GitHub</a></p>
+        
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 5</div>
+                <img src="img/ao-blazer.jpg" style="width:50%">
+                <div class="text">Mẫu Áo</div>
+            </div>
+    
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 5</div>
+                <img src="img/dam-dai-tay-beo.jpg" style="width:50%">
+                <div class="text">Mẫu Đầm</div>
+            </div>
+    
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 5</div>
+                <img src="img/ao-khoa-kaki.jpg" style="width:50%">
+                <div class="text">Mẫu Áo Khoác</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="img/chan-vay-but-chi.jpg" style="width:50%">
+                <div class="text">Mẫu Chân Váy</div>
+            </div>
+    
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="img/quan-jean-ong-dung-dang-dai-that-no-caro.jpg" style="width:50%">
+                <div class="text">Mẫu Quần</div>
+            </div>
+    
+    
         </div>
-    </div>
+        <br>
+    
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div>
+    </header>'
+    
+    <main>
+       
+    <!-- áo-->
+    <h2 class="hss">Mẫu Áo</h2>
+    <section id="products">
+        <div class="product">
+            <img src="img/ao-crop-top-co-vuong.jpg" alt="Áo croptop cổ vuông ">
+            <h3>Áo croptop cổ vuông</h3>
+            <p>Giá tiền: 180.000VND</p>
+            <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                name: 'Áo croptop cổ vuông',
+                price: '180000',
+                desc: 'Áo croptop ôm nhẹ, cổ vuông trẻ trung và tôn dáng. Tay áo ngắn phồng nhẹ nhàng, viền bèo nữ tính. Điểm nhấn là phần rút dây ở giữa ngực, có thể điều chỉnh độ nhún và tạo kiểu',
+                img: 'img/ao-crop-top-co-vuong.jpg',
+                material: 'Cotton co giãn',
+                color: 'Trắng kem',
+                style: 'Croptop trẻ trung, năng động'
+            })">Xem chi tiết</a>    
+        </div>
+
+        <div class="product">
+            <img src="img/ao-crop-top-tay-beo.jpg" alt="Áo croptop tay bèo">
+            <h3>Áo croptop tay bèo</h3>
+            <p>Giá tiền: 220.000VND</p>
+            <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                name: 'Áo croptop tay bèo',
+                price: '220000',
+                desc: 'Áo croptop ôm vừa vặn, tôn lên đường cong cơ thể. Thiết kế cổ vuông gợi cảm, tay áo ngắn phồng nhẹ nhàng với viền bèo nữ tính. Điểm nhấn là phần nhún chun dọc thân trước tạo hiệu ứng quyến rũ và dây rút ở giữa ngực có thể điều chỉnh. Dây áo mảnh cột sau cổ tạo vẻ ngoài độc đáo và gợi cảm',
+                img: 'img/ao-crop-top-tay-beo.jpg',
+                material: 'Cotton co giãn',
+                color: 'Hồng pastel',
+                style: 'Croptop trẻ trung, gợi cảm'
+            })">Xem chi tiết</a>
+        </div>
+          
+        <div class="product">
+            <img src="img/ao-thun-from-rong.jpg" alt="Áo thun form rộng">
+            <h3>Áo thun form rộng</h3>
+            <p>Giá tiền: 220.000VND</p>
+            <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                name: 'Áo thun form rộng',
+                price: '220000',
+                desc: 'Áo thun dáng suông basic tee cổ tròn, tay ngắn, mang đến sự thoải mái và dễ dàng vận động trong mọi hoạt động hàng ngày',
+                img: 'img/ao-thun-from-rong.jpg',
+                material: 'Cotton mềm mại, thoải mái ',
+                color: 'Trắng ',
+                style: 'Basic dễ mặc, phù hợp với nhiều phong cách'
+            })">Xem chi tiết</a>
+        </div>
+          
+        <div class="product">
+            <img src="img/ao-hai-day.jpg" alt="Áo hay dây">
+            <h3>Áo hai dây</h3>
+            <p>Giá tiền: 150.000VND</p>
+            <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                name: 'Áo hai dây',
+                price: '150000',
+                desc: 'Áo hai dây mảnh, cổ vuông trẻ trung và tôn lên phần xương quai xanh gợi cảm. Thiết kế ôm nhẹ ở phần ngực và xòe nhẹ ở phần eo, tạo cảm giác thoải mái và tôn dáng. Điểm nhấn là chiếc nơ to bản cột ở phía trước cổ, mang đến vẻ ngoài nữ tính và thanh lịch.',
+                img: 'img/ao-hai-day.jpg',
+                material: 'Voan mềm mại, thoáng mát',
+                color: 'Trắng kem',
+                style: 'mát mẻ và gợi cảm'
+            })">Xem chi tiết</a>
+        </div>
+    </section>
+    <!-- Đầm-->
+    <h2 class="hss">Mẫu đầm</h2>
+    <section id="products">
+        <div class="product">
+            <img src="img/vay-yem-hong-nhat.jpg" alt=" Váy yếm">
+            <h3>Váy yếm</h3>
+            <p>Giá tiền: 220.000VND</p>
+            <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                name: 'Váy yếm',
+                price: '220000',
+                desc: 'Váy yếm dáng midi xòe nhẹ, phần thân trên ôm vừa vặn, có dây buộc nơ ở cổ tạo điểm nhấn duyên dáng. Eo cao giúp tôn vòng eo và kéo dài đôi chân. Váy có túi hai bên tiện lợi. Thiết kế đơn giản nhưng vẫn toát lên vẻ thanh lịch và nữ tính.',
+                img: 'img/vay-yem-hong-nhat.jpg',
+                material: 'Cotton mềm mại thoáng mát',
+                color: 'Hồng nhạt',
+                style: 'Ngọt ngào, nữ tính'
+            })">Xem chi tiết</a>    
+        </div>
+        
+        <div class="product">
+            <img src="img/dam-dai-tay-beo.jpg" alt=" Đầm dài tay bèo">
+            <h3>Đầm dài tay bèo</h3>
+            <p>Giá tiền: 150.000VND</p>
+            <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                name: 'Đầm dài tay bèo',
+                price: '150000',
+                desc: 'Dáng xòe nhẹ, cổ vuông thanh lịch, tay dài phồng nhẹ ở vai và có chi tiết bèo nhún ở cổ tay. Phần thân áo ôm nhẹ, có chi tiết nhún dọc tạo điểm nhấn. Chân váy xòe mềm mại với đường bèo nhún bất đối xứng, mang đến vẻ ngoài bay bổng và nữ tính.',
+                img: 'img/dam-dai-tay-beo.jpg',
+                material: 'Voan mềm mại, thoáng mát',
+                color: 'Trắng kem',
+                style: 'Thanh lịch, duyên dáng, nữ tính'
+            })">Xem chi tiết</a>    
+        </div>
+        
+        <div class="product">
+            <img src="img/vay-lien-than.jpg" alt="Vay liền thân">
+            <h3>Váy liền thân</h3>
+            <p>Giá tiền: 400.000VND</p>
+            <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                name: 'Váy liền thân',
+                price: '400000',
+                desc: 'Váy liền thân dáng chữ A xòe nhẹ, phần thân trên ôm vừa vặn với thiết kế cổ chữ V tôn dáng. Tay dài phồng nhẹ ở vai tạo điểm nhấn nữ tính. Sự kết hợp màu sắc đen ở phần thân váy và trắng ở phần tay áo tạo nên vẻ ngoài thanh lịch và tinh tế. Chi tiết đường viền trắng ngang eo giúp phân chia tỷ lệ cơ thể cân đối.',
+                img: 'img/vay-lien-than.jpg',
+                material: 'Tuytsi mềm mại, thoải mái',
+                color: 'Trắng đen',
+                style: 'Cổ chữ V gợi cảm'
+            })">Xem chi tiết</a>    
+        </div>
+        
+        <div class="product">
+            <img src="img/dam-co-yem.jpg" alt="Đầm cổ yếm">
+            <h3>Đầm cổ yếm</h3>
+            <p>Giá tiền: 250.000VND</p>
+            <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                name: 'Đầm cổ yếm',
+                price: '250000',
+                desc: 'Đầm cổ yếm dáng dài xòe bồng bềnh, phần thân trên ôm sát với thiết kế cổ yếm quyến rũ, khoe trọn bờ vai thon thả. Eo cao chiết ly tỉ mỉ giúp tôn vòng eo và kéo dài đôi chân. Chân váy xòe rộng với nhiều lớp vải mềm mại, tạo độ bồng bềnh và uyển chuyển trong từng bước đi.',
+                img: 'img/dam-co-yem.jpg',
+                material: 'Lụa cao cấp',
+                color: 'Hồng nhạt',
+                style: 'Cổ yếm ngọt nào, thanh lịch, gợi cảm'
+            })">Xem chi tiết</a>    
+        </div>
+    </section>
+    <!--chân váy-->
+    <h2 class="hss">Mẫu chân váy</h2>
+    <section id="products">
+        <div class="product">
+            <img src="img/chan-vay-but-chi.jpg" alt=" Chân váy bút chì">
+            <h3>Chân váy bút chì</h3>
+            <p>Giá tiền: 500.000VND</p>
+            <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                name: 'Áo croptop cổ vuông',
+                price: '500000',
+                desc: 'Chân váy bút chì dáng dài, eo chun co giãn thoải mái, dễ dàng điều chỉnh theo vòng eo. Thiết kế đơn giản, kín đáo nhưng vẫn tôn lên vẻ nữ tính và duyên dáng',
+                img: 'img/chan-vay-but-chi.jpg',
+                material: 'Vải Cotton mềm mại, thoáng mát',
+                color: 'Kem',
+                style: 'Dáng dài suông thanh lịch và kín đáo.'
+            })">Xem chi tiết</a>    
+        </div>
+        
+        <div class="product">
+            <img src="img/chan-vay-JK.jpg" alt=" Chân váy JK">
+            <h3>Chân váy JK</h3>
+            <p>Giá tiền: 180.000VND</p>
+            <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                name: 'Chân váy JK',
+                price: '180000',
+                desc: ' Chân váy ngắn chữ A xòe nhẹ, eo cao tôn dáng. Điểm nhấn độc đáo là chi tiết cột dây đan chéo ở hai bên eo, vừa tạo vẻ ngoài cá tính vừa có thể điều chỉnh độ ôm. Thiết kế trẻ trung và năng động',
+                img: 'img/chan-vay-JK.jpg',
+                material: 'Kaki dày dặn, giữ form tốt',
+                color: 'Họa tiết kẻ caro',
+                style: 'Năng động, cá tính'
+            })">Xem chi tiết</a>    
+        </div>
+        
+        <div class="product">
+            <img src="img/chan-vay-chu-a.jpg" alt="Chân váy chữ A ">
+            <h3>Chân váy chữ A </h3>
+            <p>Giá tiền: 180.000VND</p>
+            <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                name: 'Chân váy chữ A',
+                price: '180000',
+                desc: 'Chân váy ngắn chữ A, eo vừa tôn dáng. Điểm nhấn ấn tượng là họa tiết loang màu độc đáo trên nền vải. Cài khuy bên hông với hai nút cài cách điệu hình hoa, mang đến vẻ ngoài vừa hiện đại vừa có chút nét Á Đông tinh tế. Váy có xẻ tà nhỏ ở vạt trước tạo sự thoải mái khi di chuyển.',
+                img: 'img/chan-vay-chu-a.jpg',
+                material: 'Cotton mềm mại, thoáng mát',
+                color: 'Họa tiết loang màu be và nâu nhạt',
+                style: 'Trẻ trung, tôn dáng.'
+            })">Xem chi tiết</a>    
+        </div>
+        
+        <div class="product">
+            <img src="img/cha-vay-ren.jpg" alt="Chân váy ren">
+            <h3>Chân váy ren </h3>
+            <p>Giá tiền: 300.000VND</p>
+            <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                name: 'Chân váy ren',
+                price: '300000',
+                desc: 'Chân váy chữ A dáng xòe nhẹ, eo chun co giãn thoải mái. Thiết kế nhiều tầng ren xếp lớp mềm mại, tạo độ bồng bềnh và vẻ ngoài lãng mạn, duyên dáng.',
+                img: 'img/cha-vay-ren.jpg',
+                material: 'Ren mềm mại, thoáng mát.',
+                color: 'Trắng ',
+                style: 'Dáng chữ A xòe nhẹ, nhiều tầng ren bồng bềnh.y'
+            })">Xem chi tiết</a>    
+        </div>
+    </section>
+    <!--quần-->
+    <h2 class="hss">Mẫu Quần</h2>
+    <section id="products">
+        <div class="product">
+            <img src="img/quan-jean-ong-dung-dang-dai-that-no-caro.jpg" alt="Quần jeans ống rộng đứng dáng dài thắt nơ caro">
+                    <h3>Quần jeans ống rộng thắt nơ caro</h3>
+                    <p>Giá tiền: 532.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Quần jeans ống rộng thắt nơ caro',
+                        price: '532000',
+                        desc: 'Quần ống rộng suông dài, cạp cao tôn dáng. Điểm nhấn đặc biệt là chiếc nơ buộc ở eo với họa tiết gingham xanh trắng tươi tắn, mang đến vẻ ngoài vừa thanh lịch vừa trẻ trung. Phần gấu quần có thể xắn lên để lộ họa tiết gingham đồng điệu, tạo thêm điểm nhấn thú vị.',
+                        img: 'img/quan-jean-ong-dung-dang-dai-that-no-caro.jpg',
+                        material: 'Vải jean',
+                        color: 'Kem',
+                        style: 'Ông rộng thoải mái, cạp cao tôn dáng'
+                    })">Xem chi tiết</a>    
+                </div>
+                
+                <div class="product">
+                    <img src="img/quan-short-jean.jpg" alt=" Quần short jean">
+                    <h3>Quần short jean</h3>
+                    <p>Giá tiền: 180.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Quần short jean',
+                        price: '180000',
+                        desc: 'Quần short jean ống rộng thoải mái, cạp cao tôn dáng. Thiết kế có hai túi hộp lớn ở phía trước tạo điểm nhấn utility mạnh mẽ và tiện dụng. Gấu quần xắn nhẹ. Điểm đặc biệt là chiếc thắt lưng đen đi kèm với khóa vuông đơn giản nhưng cá tính, giúp bạn tạo điểm nhấn cho vòng eo.',
+                        img: 'img/quan-short-jean.jpg',
+                        material: 'Bò',
+                        color: 'Xanh denim wash bụi bặm và cá tính',
+                        style: 'Ống rộng thoải mái và năng động.'
+                    })">Xem chi tiết</a>    
+                </div>
+                   
+                <div class="product">
+                    <img src="img/quan-the-thao.jpg" alt="Quần thể thao">
+                    <h3>Quần thể thao</h3>
+                    <p>Giá tiền: 390.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Quần thể thao',
+                        price: '390000',
+                        desc: 'Quần thể thao dáng ống rộng thoải mái, cạp chun co giãn có dây rút điều chỉnh để vừa vặn với vòng eo. Thiết kế có đường sọc dọc hai bên ống quần tạo điểm nhấn thể thao và năng động. Chất liệu mềm mại, không gò bó, lý tưởng cho những hoạt động nhẹ nhàng hoặc thư giãn tại nhà.',
+                        img: 'img/quan-the-thao.jpg',
+                        material: 'Nỉ',
+                        color: 'Hồng',
+                        style: 'Ống rộng thoải mái vận động.'
+                    })">Xem chi tiết</a>    
+                </div>
+                
+                <div class="product">
+                    <img src="img/quan-lung-ong-rong-dang-suong-nhieu-tui.jpg" alt="Quần lửng ống rộng dáng suông nhiều túi">
+                    <h3>Quần lửng ống rộng dáng suông nhiều túi</h3>
+                    <p>Giá tiền: 400.000VND</p>
+                    <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                        name: 'Quần lửng ống rộng dáng suông nhiều túi',
+                        price: '400000',
+                        desc: 'Quần jean lửng ống rộng thoải mái, cạp vừa. Thiết kế đặc trưng với nhiều túi hộp lớn ở hai bên đùi, vừa tạo điểm nhấn phong cách utility mạnh mẽ vừa tăng tính tiện dụng để đựng các vật dụng cá nhân khi dạo phố. Gấu quần có thể xắn lên để thay đổi phong cách.',
+                        img: 'img/quan-lung-ong-rong-dang-suong-nhieu-tui.jpg',
+                        material: 'vải bò',
+                        color: 'Xanh denim wash bụi bặm và cá tính',
+                        style: 'Cổ vuông, ngắn tay'
+                    })">Xem chi tiết</a>    
+                </div>
+    </section>
+    <!--áo khoác-->
+    <h2 class="hss">Mẫu Áo Khoác</h2>
+    <section id="products">
+        <div class="product">
+            <img src="img/ao-khoa-kaki.jpg" alt="Áo khoác kaki">
+            <h3>Áo khoác kaki</h3>
+            <p>Giá tiền: 220.000VND</p>
+            <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                name: 'Áo khoác kaki',
+                price: '220000',
+                desc: 'Áo khoác bomber dáng ngắn, cổ tròn bo viền, tay dài phồng nhẹ ở vai và bo chun ở cổ tay. Thiết kế cài nút phía trước tiện lợi. Hai túi chéo lớn ở phía trước vừa thời trang vừa tiện dụng để đựng đồ cá nhân khi dạo phố Thủ Dầu Một. Gấu áo bo chun tạo form dáng khỏe khoắn',
+                img: 'img/ao-khoa-kaki.jpg',
+                material: 'Dày dặn, đứng form, phù hợp với nhiều hoàn',
+                color: 'Be trung tính',
+                style: 'Bomber cá tính và năng động'
+            })">Xem chi tiết</a>    
+        </div>
+
+        <div class="product">
+            <img src="img/ao-khoac-bomber.jpg" alt="Áo khoác bomber">
+            <h3>Áo khoác bomber</h3>
+            <p>Giá tiền: 540.000VND</p>
+            <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                name: 'Áo khoác bomber',
+                price: '540000',
+                desc: 'Áo khoác bomber dáng rộng thoải mái (unisex), cổ đứng có khóa kéo cao, tay dài rộng với bo chun ở cổ tay. Thiết kế khóa kéo dọc thân trước tiện lợi. Điểm nhấn là các chi tiết túi hộp có khóa kéo ở ngực và tay áo, mang đậm phong cách phi công mạnh mẽ và hiện đại. Gấu áo bo chun tạo form dáng khỏe khoắn và năng động',
+                img: 'img/ao-khoac-bomber.jpg',
+                material: 'Dày dặn, bền bỉ, bảo vệ tốt trong thời tiết se lạnh.',
+                color: 'Kem trung tính',
+                style: 'Hiện đại và cá tính, phù hợp cho cả nam và nữ.'
+            })">Xem chi tiết</a>    
+        </div>
+        
+        <div class="product">
+            <img src="img/ao-khoac-cardigan-ngan.jpg" alt="áo khoác cardigan ngắn">
+            <h3>Áo khoác cardigan ngắn</h3>
+            <p>Giá tiền: 250.000VND</p>
+            <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                name: 'Áo cardigan ngắn',
+                price: '250000',
+                desc: 'Áo cardigan dệt kim dáng ngắn, cổ tròn đơn giản. Thiết kế cài nút phía trước tiện lợi. Tay dài giữ ấm, gấu áo và cổ tay bo nhẹ nhàng, tạo form dáng gọn gàng và thanh lịch.',
+                img: 'img/ao-khoac-cardigan-ngan.jpg',
+                material: 'Sợi dệt kim mềm mại, có độ co giãn nhẹ',
+                color: 'Đỏ',
+                style: 'Cardigan dáng ngắn thanh lịch '
+            })">Xem chi tiết</a>    
+        </div>
+        
+        <div class="product">
+            <img src="img/ao-khoac-cardigan-rong.jpg" alt=" Áo khoác cardigan rộng">
+            <h3>Áo khoác cardigan rộng</h3>
+            <p>Giá tiền: 220.000VND</p>
+            <a href="Chitietsanpham.html" onclick="saveProductDetail({
+                name: 'Áo cardigan rộng',
+                price: '220000',
+                desc: ' Áo cardigan dệt kim dáng rộng, cổ chữ V sâu, tay dài rộng rãi. Thiết kế cài nút phía trước tiện lợi. Điểm nhấn là hai túi lớn ở phía trước, vừa giữ ấm tay vừa tạo vẻ ngoài casual và tiện dụng. Gấu áo và cổ tay bo nhẹ nhàng.',
+                img: 'img/ao-khoac-cardigan-rong.jpg',
+                material: 'Dệt kim mềm mại và ấm áp',
+                color: 'Nâu',
+                style: ' Rộng rãi, thoải mái'
+            })">Xem chi tiết</a>    
+        </div>
+    </section>
+    </main>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 1500); // Change image every 2 seconds
+        }
+        </script>
+        
+
+    <footer>
+        <p>Luna Wardrobe &copy; 2025. All rughts reserved.</p>
+    </footer>
 </body>
+
+<script>
+    function saveProductDetail(product) {
+      localStorage.setItem('selectedProduct', JSON.stringify(product));
+    }
+  </script>
+
+<!-- Khung modal hiển thị ảnh -->
+<div id="imageModal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modalImg" src="" alt="zoom ảnh">
+  </div>
+  <script>
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImg");
+  
+    // Gắn sự kiện click vào tất cả ảnh trong sản phẩm
+    document.querySelectorAll("#products .product img").forEach(img => {
+      img.addEventListener("click", () => {
+        modal.style.display = "block";
+        modalImg.src = img.src;
+      });
+    });
+  
+    // Hàm để đóng modal
+    function closeModal() {
+      modal.style.display = "none";
+    }
+  
+    // Đóng modal khi bấm ngoài ảnh
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        closeModal();
+      }
+    }
+  </script>
+  <script>
+    function toggleMenu() {
+      var nav = document.getElementById("navLinks");
+      nav.classList.toggle("show");
+    }
+    </script>
+    
+
 </html>
